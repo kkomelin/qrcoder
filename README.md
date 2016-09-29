@@ -1,4 +1,6 @@
 # QRCoder
-Drupal 8 module that was developed for demo purposes and it is an addition to my article.
+Drupal 8 module that provides QR Code field formatter for core Link field.
 
-Please note that QRCoder module is not for production use and provided "AS IS".
+It was developed for demo purposes only to be an addition to my article.
+
+Provided "AS IS" and licensed under GNU GPL v2.
