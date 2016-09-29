@@ -1,0 +1,7 @@
+name: QRCoder
+type: module
+description: Provides a QR Code formatter for the Link field.
+core: 8.x
+package: Custom
+dependencies:
+  - link
