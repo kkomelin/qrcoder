@@ -20,33 +20,6 @@ use Drupal\Core\Form\FormStateInterface;
  * )
  */
 class QRCodeLinkFieldFormatter extends FormatterBase {
-  /**
-   * {@inheritdoc}
-   */
-  public static function defaultSettings() {
-    return array(
-      // Implement default settings.
-    ) + parent::defaultSettings();
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function settingsForm(array $form, FormStateInterface $form_state) {
-    return array(
-      // Implement settings form.
-    ) + parent::settingsForm($form, $form_state);
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function settingsSummary() {
-    $summary = [];
-    // Implement settings summary.
-
-    return $summary;
-  }
 
   /**
    * {@inheritdoc}
