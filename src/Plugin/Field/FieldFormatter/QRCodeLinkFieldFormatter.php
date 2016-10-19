@@ -3,6 +3,7 @@
 namespace Drupal\qrcoder\Plugin\Field\FieldFormatter;
 
 use Drupal\Component\Utility\Html;
+use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Field\FieldItemInterface;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\FormatterBase;
@@ -58,7 +59,7 @@ class QRCodeLinkFieldFormatter extends FormatterBase {
       // Get a URL from the field and make it absolute.
       $url = $item->getUrl()->setAbsolute(TRUE)->toString();
       // Just in case, sanitize entered URL.
-      $url =  \Drupal\Component\Utility\UrlHelper::filterBadProtocol($url);
+      $url =  UrlHelper::filterBadProtocol($url);
       // Use image theme function to render a QR code image for the URL.
       $elements[$delta] = [
         '#theme' => 'image',
